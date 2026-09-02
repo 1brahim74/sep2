@@ -11,7 +11,7 @@ COPY pom.xml .
 RUN ./mvnw package -DskipTests=true
 
 # second stage
-FROM eclipse-temurin:23-jre-noble
+FROM eclipse-temurin:23_37-jre-noble
 
 WORKDIR /runningapp
 
